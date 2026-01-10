@@ -1,0 +1,113 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transition: all .5s;
+}
+
+/*NavBar*/
+
+nav {
+    padding: 10px;
+    background-image: linear-gradient(to bottom, var(--color-tertiary)25%, var(--color-primary)75%, #00000000);
+    transition: all .5s;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul li:hover {
+    background-color: var(--color-second);
+    color: var(--color-background);
+}
+
+.text {
+  display: flex;
+  gap: 10px; /* espaçamento entre os containers */
+  flex-wrap: wrap; /* para quebrar linha se não couber */
+  justify-content: center;
+}
+
+.personagens .container{
+    padding: 50px ;
+    position: relative;
+    border: 1px solid black;
+    justify-content: center;
+    max-width: 370px;
+    max-height: 370px;
+    background-color: rgba(82, 91, 96, 0.1);
+    overflow: hidden;
+    transition: 1s;
+}
+.personagens .container.ativo{
+    max-height: 10000px;
+}
+
+.personagens .container-depth{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, rgb(20, 20, 20), rgb(38, 38, 38) 20%, rgba(255, 255, 255, 0));
+}
+
+.personagens.text { 
+    align-self: flex-start;
+}
+.personagens img{
+    margin: 0 auto;
+    width: 200px;
+    margin-bottom: 20px;
+    transition: width 0.3s;
+}
+.personagens img.ativo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    z-index: 1;
+}
+.personagens .seta{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.seta-svg{
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+.seta-svg.ativo {
+  transform: rotate(180deg);
+}
+#zoomModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+#zoomModal img {
+    width: 500px;
+    height: 500px;
+    max-width: 50vw;
+    max-height: 50vw;
+    box-shadow: 0 0 20px #fff;
+}

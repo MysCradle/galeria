@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@unocss/reset@66.1.1/tailwind-compat.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="padroes.css">
+    <title>Personagens Guardados</title>
+</head>
+<body class="tema tema--escuro" id="body">
+    <!-- menu -->
+    <nav>
+        <ul>
+            <a href="https://myscradle.github.io"><img width="50px" src="https://avatars.githubusercontent.com/u/213154772?v=4" alt=""></a>
+            <div class="flex-1"></div>
+            <div id="light" class="light"></div>
+        </ul>
+    </nav>
+    <div class="conteudo">
+    <div class="personagens" id="personagem">
+        <div class="text" id="output"></div>
+        <div id="zoomModal" onclick="closeZoom()">
+            <img id="zoomedImage" src="">
+        </div>
+    </div>
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>
