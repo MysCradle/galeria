@@ -87,7 +87,7 @@ const classe = {
     c2: 23
 }
 
-const Magico = criarPersonagem({
+const Magico = {
     nome: "MAGICO",
     idade: 95,
     raca: "Humano",
@@ -98,8 +98,8 @@ const Magico = criarPersonagem({
     organizacao: "Jinsei no Unmei",
     descricao: "Maior Mago e Feiticeiro do mundo",
     image: "./src/magico.jpg"
-})
-const Kama = criarPersonagem({
+}
+const Kama = {
     nome: "Kama",
     idade: 20,
     raca: "Híbrido",
@@ -110,6 +110,22 @@ const Kama = criarPersonagem({
     organizacao: "???",
     descricao: "Ataca com Espada e garras que são como foices que cortam o ar",
     image: "./src/kamaitachi.jpg",
-})
+}
+const Maggye = {
+    nome: "Maggye",
+    idade: 60,
+    raca: "Humana",
+    classe: "Maga",
+    habilidade: "Controlar os 8 elementos da natureza",
+    estado: "Morta",
+    reino: "Samir",
+    organizacao: "Jinsei no Unmei",
+    descricao: "A maga dominadora com mais diversidade elementar (fogo, água, ar, terra, raio, ferro, areia, magia)",
+    image: "./src/maggye_.png",
+}
+
+criarPersonagem(Maggye)
+criarPersonagem(Magico)
+criarPersonagem(Kama)
 
 mostrarPersonagens()
