@@ -123,10 +123,22 @@ const Maggye = {
     descricao: "A maga dominadora com mais diversidade elementar (fogo, água, ar, terra, raio, ferro, areia, magia)",
     image: "./src/maggye_.png",
 }
-
+const Sammie = {
+    nome: "Sammie",
+    idade: 19,
+    raca: "Monstro",
+    classe: "Feiticeira",
+    habilidade: "Invoca copias monstruosas de si",
+    estado: "Viva",
+    reino: "Apoena",
+    organizacao: "Redemon",
+    descricao: "jovem Feiticeira e encantadora de monstros, atrai monstros e híbridos e os ataca com suas criaturas",
+    image: "./src/sammie.png",
+}
 criarPersonagem(Maggye)
 criarPersonagem(Magico)
 criarPersonagem(Kama)
+criarPersonagem(Sammie)
 
 mostrarPersonagens()
 
